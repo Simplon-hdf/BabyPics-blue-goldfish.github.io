@@ -4,18 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
 
-<body>
+<body class="font-dm ">
     <main class="grid justify-items-center">
-        <h1 class="">Blog</h1>
+        <h1 class="font-carattere text-4xl">Blog</h1>
 
         <section class="grid justify-items-center">
 
             <section class="flex justify-between w-full">
-                <h2>Lorem ipsum dolor </h2>
+                <h2 class="font-crimson text-3xl">Lorem ipsum dolor </h2>
                 <p class="">28 mai 2048 </p>
             </section>
             <figure>
@@ -24,7 +63,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugit in ipsum beatae labore excepturi
                 similique quod necessitatibus, reiciendis officiis officia incidunt, vel iusto autem pariatur. Voluptate
                 expedita excepturi aut.</p>
-            <a href="TBA"> Lire plus...</a>
+            <a href="TBA" class="text-xl"> Lire plus...</a>
 
             <div class="flex ">
                 <p>40 vues</p>
