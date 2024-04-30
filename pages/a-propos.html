@@ -4,28 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos</title>
 </head>
 
-<body>
-    <main class="grid justify-items-center">
-        <h1>A propos</h1>
+<body class="font-dm">
+    <main class="grid ">
+        <h1 class="font-carattere justify-self-center text-4xl">A propos</h1>
         <figure>
             <img src="https://placehold.co/300x300" alt="TBA" class="w-full">
         </figure>
         <section class="grid  justify-center">
-            <h2>Lorem ipsum dolor </h2>
+            <h2 class="font-crimson text-3xl">Lorem ipsum dolor </h2>
             <p>Lorem ipsum dolor sit </p>
         </section>
 
         <section class="grid justify-center">
-            <h2>Lorem ipsum dolor sit </h2>
+            <h2 class="font-crimson text-3xl">Lorem ipsum dolor sit </h2>
             <p>lorem ipsum dolor sit amet</p>
         </section>
 
         <section class="grid justify-items-center">
-            <h2>Lorem ipsum dolor </h2>
+            <h2 class="font-crimson text-3xl">Lorem ipsum dolor </h2>
             <p>Lorem ipsum dolor .</p>
             <figure>
                 <img src="https://placehold.co/300x300" alt="TBA" class="hidden">
