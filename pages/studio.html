@@ -6,11 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
 </head>
 
-<body>
+<body class="font-dm">
     <main class="grid justify-items-center">
-        <h1>Le studio</h1>
+        <h1 class=" font-carattere text-4xl">Le studio</h1>
         <figure>
             <img src="../assets/placeholder.png" alt="photo studio de Sarah">
         </figure>
@@ -19,7 +58,7 @@
             voluptates nisi magni libero omnis assumenda, facere explicabo alias eaque doloremque unde quod eius illo
             enim.</p>
         <article class="grid text-center">
-            <h2>Set campagne</h2>
+            <h3 class="font-crimson text-2xl">Set campagne</h2>
             <figure class="order-first">
                 <img src="../assets/placeholder.png" alt="set de photographie à thême campagnard" class="w-full">
             </figure>
@@ -30,7 +69,7 @@
         <!--repeat previous section two more times for other sets-->
         <div class="flex-col">
             <p>Lorem ipsum dolor sit.</p>
-            <a href="TBA">Voir les prestations</a>
+            <a href="TBA" class="text-xl">Voir les prestations</a>
         </div>
     </main>
 </body>

@@ -6,35 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah - Photographe bébé</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+          rel="stylesheet">
 </head>
 
-<body>
+<body class="font-dm">
     <main>
         <section class="flex-col w-full filter grayscale bg-cover text-center"
             style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./assets/placeholder.png);">
 
-            <h1 class="flex items-center justify-center">Sarah [Nom de famille]</h1>
+            <h1 class="flex items-center justify-center font-carattere text-5xl">Sarah [Nom de famille]</h1>
             <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt, ipsum repudiandae laudantium harum
                 modi magni beatae suscipit.</p>
-            <a href="TBA" class="flex items-center justify-center">Contactez-moi</a>
+            <a href="TBA" class="flex items-center justify-center text-xl">Contactez-moi</a>
         </section>
 
         <section class="flex-col w-full text-center">
-            <h2 class="flex items-center justify-center">Photographe bébé depuis 10 ans...</h2>
+            <h2 class="flex items-center justify-center font-crimson text-3xl">Photographe bébé depuis 10 ans...</h2>
             <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
                 iste dolores molestiae est saepe voluptate
                 doloribus nostrum, quasi, blanditiis quam vel, ipsam mollitia soluta architecto ad alias ea ipsa
                 deleniti.</p>
             <div class="w-svw filter grayscale bg-cover"
                 style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./assets/placeholder.png);">
-                <a href="TBA">Parcourir la galerie</a>
+                <a href="TBA" class="text-xl">Parcourir la galerie</a>
             </div>
         </section>
         <section>
-            <h2>Mes prestations</h2>
+            <h2 class="font-crimson text-3xl">Mes prestations</h2>
             <article class="flex-col filter grayscale bg-cover text-center">
-                <h3 class="flex items-center justify-center">Photo grossesse</h3>
+                <h3 class="flex items-center justify-center font-crimson text-2xl">Photo grossesse</h3>
                 <figure>
                     <img src="./assets/placeholder.png" alt="image femme enceinte" class="hidden">
                 </figure>
@@ -44,10 +83,10 @@
                     voluptatibus tenetur?</p>
             </article>
             <!--add two more cards for other prestation exemples-->
-            <a href="TBA" class="flex items-center justify-center block">Decouvrez mes autres services...</a>
+            <a href="TBA" class="flex items-center justify-center block text-xl">Mes autres services...</a>
         </section>
         <section class="flex-col">
-            <h3 class="flex items-center justify-center">Qui est Sarah ?</h3>
+            <h3 class="flex items-center justify-center font-crimson text-2xl">Qui est Sarah ?</h3>
             <figure>
                 <img src="./assets/placeholder.png" alt="portrait photographe" class="hidden">
             </figure>
@@ -55,7 +94,7 @@
                 Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA" class="flex items-center justify-center">En savoir plus...</a>
+            <a href="TBA" class="flex items-center justify-center text-xl">En savoir plus...</a>
         </section>
         <!--section blog copiée de la section About-->
     </main>
