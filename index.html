@@ -5,53 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah - Photographe bébé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Sarah [Nom de famille]</h1>
-        <figure>
-            <img src="./assets/placeholder.png" alt="photo bannière">
-        </figure>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsum repudiandae laudantium harum
-            modi magni beatae suscipit voluptate consequatur soluta temporibus, sunt dolorum. Adipisci quaerat
-            incidunt inventore nihil, nisi voluptatum.</p>
-        <a href="TBA">Contactez-moi</a>
-    </header>
     <main>
-        <section>
-            <h2>Photographe bébé depuis 10 ans...</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iste dolores molestiae est saepe voluptate
+        <section class="flex-col w-full filter grayscale bg-cover text-center"
+            style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./assets/placeholder.png);">
+
+            <h1 class="flex items-center justify-center">Sarah [Nom de famille]</h1>
+            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, ipsum repudiandae laudantium harum
+                modi magni beatae suscipit.</p>
+            <a href="TBA" class="flex items-center justify-center">Contactez-moi</a>
+        </section>
+
+        <section class="flex-col w-full text-center">
+            <h2 class="flex items-center justify-center">Photographe bébé depuis 10 ans...</h2>
+            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                iste dolores molestiae est saepe voluptate
                 doloribus nostrum, quasi, blanditiis quam vel, ipsam mollitia soluta architecto ad alias ea ipsa
                 deleniti.</p>
-            <figure>
-                <img src="TBA" alt="photo preview galerie">
-            </figure>
-            <a href="TBA">Parcourir la galerie</a>
+            <div class="w-svw filter grayscale bg-cover"
+                style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(./assets/placeholder.png);">
+                <a href="TBA">Parcourir la galerie</a>
+            </div>
         </section>
         <section>
             <h2>Mes prestations</h2>
-            <section>
-                <h3>Photo grossesse</h3>
+            <article class="flex-col filter grayscale bg-cover text-center">
+                <h3 class="flex items-center justify-center">Photo grossesse</h3>
                 <figure>
-                    <img src="./assets/placeholder.png" alt="image femme enceinte">
+                    <img src="./assets/placeholder.png" alt="image femme enceinte" class="hidden">
                 </figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum qui iure aut quas quae nulla
+                <p class="flex items-center justify-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Harum qui iure aut quas quae nulla
                     molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
                     voluptatibus tenetur?</p>
-            </section>
+            </article>
             <!--add two more cards for other prestation exemples-->
-            <a href="TBA">Decouvrez mes autres services...</a>
+            <a href="TBA" class="flex items-center justify-center block">Decouvrez mes autres services...</a>
         </section>
-        <section>
-            <h3>Qui est Sarah ?</h3>
+        <section class="flex-col">
+            <h3 class="flex items-center justify-center">Qui est Sarah ?</h3>
             <figure>
-                <img src="./assets/placeholder.png" alt="portrait photographe">
+                <img src="./assets/placeholder.png" alt="portrait photographe" class="hidden">
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quidem quo placeat quisquam ex,
+            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA">En savoir plus...</a>
+            <a href="TBA" class="flex items-center justify-center">En savoir plus...</a>
         </section>
         <!--section blog copiée de la section About-->
     </main>
