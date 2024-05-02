@@ -4,27 +4,114 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tarif</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+
+                            carmine: '#950E1B',
+                            fwhite: '#F9F7F0',
+                            ashgray: '#B7CCC9',
+                            thistle: '#D0B3BF',
+                            azure: '#DBE6E4'
+
+
+
+                        },
+                        fontFamily: {
+                            dm: ["DM Sans"],
+                            crimson: ["Crimson Text"],
+                            carattere: ["Carattere"],
+
+
+                        },
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+                crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+              rel="stylesheet">
     </head>
-    <body>
-        <main>
-            <h1>Tarifs</h1>
-            <article>
-                <section>
-                    <h2>Presta Name</h2>
+    <body class="font-dm bg-fwhite">
+        <main class="grid justify-items-center">
+            <h1 class="my-5 text-6xl font-carattere text-carmine">Tarifs</h1>
+            <article class="mb-5">
+                <section style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/img/images.jpeg);"
+                         class="flex h-48 justify-center bg-cover">
+                    <h2 class="text-3xl	mt-5 text-ashgray ">Presta Name </h2>
                 </section>
                 <div>
                     <figure>
-                        <img src="https://placehold.co/300x300" alt="tba"
-                             href="tba">
+                        <img src=" https://placehold.co/300x300" alt="tba"
+                             href="tba" class="hidden">
                     </figure>
-                    <section>
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Beatae a nulla delectus magnam nesciunt neque!
-                            Iusto autem, cupiditate laudantium quibusdam, modi
-                            ipsa porro perspiciatis accusantium pariatur illum
-                            quasi? Vel, repellendus!</p>
-                        <a href="tba">Contact</a>
+                    <section class="grid justify-items-center">
+                        <h3 class="text-2xl	my-3 font-crimson">Title</h3>
+                        <p class=" px-5">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. In accusantium, magnam pariatur
+                            nisi libero atque eum mollitia blanditiis temporibus
+                            eos dolore, et sint maxime molestias modi ad
+                            dolores. Reiciendis, libero. </p>
+                        <a href="tba"
+                           class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Contact</a>
+                    </section>
+                </div>
+            </article>
+            <article class="mb-5 bg-azure">
+                <section style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/img/11a22c678506b41140eaa00cef72def5.jpg);"
+                         class="flex h-48 justify-center bg-cover">
+                    <h2 class="text-3xl	mt-5 text-ashgray ">Presta Name </h2>
+                </section>
+                <div>
+                    <figure>
+                        <img src=" https://placehold.co/300x300" alt="tba"
+                             href="tba" class="hidden">
+                    </figure>
+                    <section class="grid justify-items-center">
+                        <h3 class="text-2xl	my-3 font-crimson">Title</h3>
+                        <p class=" px-5">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. In accusantium, magnam pariatur
+                            nisi libero atque eum mollitia blanditiis temporibus
+                            eos dolore, et sint maxime molestias modi ad
+                            dolores. Reiciendis, libero. </p>
+                        <a href="tba"
+                           class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Contact</a>
+                    </section>
+                </div>
+            </article>
+            <article class="mb-5">
+                <section style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../assets/img/newborn-photography-seattle-baby-photographer-NR-24.jpg);"
+                         class="flex h-48 justify-center bg-cover">
+                    <h2 class="text-3xl	mt-5 text-ashgray ">Presta Name </h2>
+                </section>
+                <div>
+                    <figure>
+                        <img src=" https://placehold.co/300x300" alt="tba"
+                             href="tba" class="hidden">
+                    </figure>
+                    <section class="grid justify-items-center">
+                        <h3 class="text-2xl	my-3 font-crimson">Title</h3>
+                        <p class=" px-5">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. In accusantium, magnam pariatur
+                            nisi libero atque eum mollitia blanditiis temporibus
+                            eos dolore, et sint maxime molestias modi ad
+                            dolores. Reiciendis, libero. </p>
+                        <a href="tba"
+                           class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Contact</a>
                     </section>
                 </div>
             </article>
