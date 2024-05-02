@@ -51,7 +51,7 @@
 <body class="font-dm bg-fwhite">
     <main>
         <section class="grid justify-items-center w-full bg-cover text-center p-10 text-fwhite"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg);">
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg); background-position: center center;">
 
             <h1 class="flex items-center justify-center font-carattere text-5xl mt-5 px-5 text-white">Sarah Krosch</h1>
             <p class="flex items-center justify-center my-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -66,10 +66,13 @@
                     bébé depuis 10
                     ans...</h2>
                 <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Neque
-                    iste dolores molestiae est saepe voluptate
-                    doloribus nostrum, quasi, blanditiis.</p>
+                    adipisicing elit. Officiis sequi, corporis non, dolores a beatae maiores quaerat aspernatur
+                    voluptatibus maxime illum molestiae fugiat placeat! Fugit asperiores deleniti architecto laboriosam
+                    aspernatur.
+                    Voluptatem magni debitis repellendus explicabo voluptas quidem dolor quae alias harum incidunt,
+                    accusantium eaque facere, quaerat quasi rem vitae! Corrupti nam pariatur quibusdam a sint
+                    perferendis reiciendis et temporibus veritatis.
+                    Doloribus est quasi.</p>
                 <div class="grid justify-items-center items-center bg-cover h-48 my-5"
                     style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0020_galleryPV.png); background-position: center center;">
                     <a href="TBA"
@@ -77,17 +80,17 @@
                         la galerie</a>
                 </div>
         </section>
-        <section class="grid justify-items-center items-center px-5 my-3">
-            <h2 class="font-crimson text-3xl my-5 text-carmine">Mes prestations</h2>
+        <section class="grid md:grid-cols-2 justify-items-center items-center px-5 my-3 md:px-10">
+            <h2 class="md:col-span-2 font-crimson text-3xl my-5 text-carmine">Mes prestations</h2>
             <a href="TBA">
                 <article
-                    class="flex-col filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-                    style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0050_prestaPREG.jpg); background-position: center center">
-                    <h3 class="flex items-center justify-center font-crimson text-2xl my-3">Photo grossesse</h3>
+                    class="md:h-96 filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                    style="background-image: linear-gradient(rgba(255, 255, 255, 0.664),rgba(255, 255, 255, 0.363)),url(./assets/img/index/0050_prestaPREG.jpg); background-position: center center">
+                    <h3 class="font-crimson text-2xl my-3">Photo grossesse</h3>
                     <figure>
                         <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image femme enceinte" class="hidden">
                     </figure>
-                    <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                    <p class="my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
                         adipisicing
                         elit.
                         Harum qui iure aut quas quae nulla
@@ -96,66 +99,79 @@
                 </article>
                 <a href="TBA">
                     <article
-                        class="flex-col filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-                        style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0030_prestaBB.jpg); background-position: center center">
+                        class="md:h-96 filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                        style="background-image: linear-gradient(rgba(255, 255, 255, 0.664),rgba(255, 255, 255, 0.363)),url(./assets/img/index/0030_prestaBB.jpg); background-position: center center">
                         <h3 class="flex items-center justify-center font-crimson text-2xl my-3">Photo nouveau né</h3>
                         <figure>
                             <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image bébé" class="hidden">
                         </figure>
-                        <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                        <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet
+                            consectetur
                             adipisicing
                             elit.
                             Harum qui iure aut quas quae nulla
-                            molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
+                            molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium,
+                            sint
                             voluptatibus tenetur?</p>
                     </article>
-                    <a href="TBA">
+                    <a href="TBA" class="md:col-span-2">
                         <article
-                            class="flex-col filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-                            style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0040_prestaFAMI.jpg); background-position: center center">
+                            class="filter grayscale bg-cover text-center m-3 py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                            style="background-image: linear-gradient(rgba(255, 255, 255, 0.664),rgba(255, 255, 255, 0.363)),url(./assets/img/index/0040_prestaFAMI.jpg); background-position: center center">
                             <h3 class="flex items-center justify-center font-crimson text-2xl my-3">Photo famille</h3>
                             <figure>
-                                <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image famille avec bébé" class="hidden">
+                                <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image famille avec bébé"
+                                    class="hidden">
                             </figure>
-                            <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                            <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet
+                                consectetur
                                 adipisicing
                                 elit.
                                 Harum qui iure aut quas quae nulla
-                                molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
+                                molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti
+                                laudantium, sint
                                 voluptatibus tenetur?</p>
                         </article>
-            </a>
-            <a href="TBA"
-                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Mes
-                autres services...</a>
+                    </a>
+                    <div class="flex justify-items-center md:col-span-2">
+                        <a href="TBA"
+                            class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Mes
+                            autres services...</a>
+                    </div>
         </section>
-        <section class="grid justify-items-center px-5 my-3">
-            <h3 class="flex items-center justify-center font-crimson text-2xl text-carmine my-5">Qui est Sarah ?</h3>
-            <figure>
-                <img src="./assets/img/index/0060_about.jpg" alt="portrait photographe" class="hidden">
+        <section class="grid md:grid-cols-2 md:grid-row-4 justify-items-center px-5 my-3 md:px-16 md:my-6">
+            <h3 class="font-crimson text-2xl text-carmine my-5">Qui est Sarah ?</h3>
+            <figure class="md:col-start-1 md:row-start-1 md:row-span-4 object-cover md:h-96 md:w-80">
+                <img src="./assets/img/index/0060_about.jpg" alt="portrait photographe"
+                    class="hidden md:inline object-cover md:h-96 md:w-80 object-right">
             </figure>
-            <p class="flex items-center justify-center text-start my-3 px-5">Lorem ipsum dolor sit amet consectetur
+            <p class="text-start my-3 px-5">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit.
                 Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA"
-                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
-                savoir plus...</a>
+            <div class="md:col-span-2">
+                <a href="TBA"
+                    class="block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                    savoir plus...</a>
+            </div>
         </section>
-        <section class="grid justify-items-center px-5 my-3">
-            <h3 class="flex items-center justify-center font-crimson text-2xl text-carmine my-5">Le blog de Sarah</h3>
-            <figure>
-                <img src="./assets/img/index/0070_blog.png" alt="photographe écrivant à son ordinateur" class="hidden">
+        <section class="grid md:grid-cols-2 md:grid-row-4 justify-items-center px-5 my-3 md:px-16  md:my-6">
+            <h3 class="font-crimson text-2xl text-carmine my-5">Le blog de Sarah</h3>
+            <figure class="md:col-start-2 md:row-start-1 md:row-span-4 object-cover md:h-96 md:w-80">
+                <img src="./assets/img/index/0070_blog.png" alt="photographe écrivant à son ordinateur"
+                    class="hidden md:inline object-cover md:h-96 md:w-80 object-right">
             </figure>
-            <p class="flex items-center justify-center text-start my-3 px-5">Lorem ipsum dolor sit amet consectetur
+            <p class="text-end my-3 px-5">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit.
                 Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA"
-                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
-                savoir plus...</a>
+            <div class="md:col-span-2">
+                <a href="TBA"
+                    class="block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                    savoir plus...</a>
+            </div>
         </section>
 
     </main>
