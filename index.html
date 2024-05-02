@@ -15,7 +15,8 @@
                         carmine: '#950E1B',
                         fwhite: '#F9F7F0',
                         ashgray: '#B7CCC9',
-                        thistle: '#D0B3BF'
+                        thistle: '#D0B3BF',
+                        azure: '#DBE6E4'
 
 
 
@@ -31,71 +32,83 @@
             }
         }
     </script>
-    <script src="https://kit.fontawesome.com/f0cd4bd620.js"
-            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="font-dm bg-fwhite">
     <main>
-        <section class="flex-col w-full filter grayscale bg-cover text-center"
+        <section class="flex-col w-full filter grayscale bg-cover text-center p-5"
             style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/placeholder.png);">
 
-            <h1 class="flex items-center justify-center font-carattere text-5xl">Sarah [Nom de famille]</h1>
-            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt, ipsum repudiandae laudantium harum
-                modi magni beatae suscipit.</p>
-            <a href="TBA" class="flex items-center justify-center text-xl">Contactez-moi</a>
+            <h1 class="flex items-center justify-center font-carattere text-5xl mt-5 px-5">Sarah [Nom de famille]</h1>
+            <p class="flex items-center justify-center my-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Incidunt, ipsum repudiandae.</p>
+            <a href="TBA" class="flex items-center justify-center text-xl px-5">Contactez-moi</a>
         </section>
 
         <section class="flex-col w-full text-center">
-            <h2 class="flex items-center justify-center font-crimson text-3xl">Photographe bébé depuis 10 ans...</h2>
-            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            <h2 class="flex items-center justify-center font-crimson text-3xl my-5 px-5">Photographe bébé depuis 10
+                ans...</h2>
+            <p class="flex items-center justify-center my-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Neque
                 iste dolores molestiae est saepe voluptate
-                doloribus nostrum, quasi, blanditiis quam vel, ipsam mollitia soluta architecto ad alias ea ipsa
-                deleniti.</p>
-            <div class="w-svw filter grayscale bg-cover"
+                doloribus nostrum, quasi, blanditiis.</p>
+            <div class="grid justify-items-center items-center bg-cover h-48 my-5"
                 style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/placeholder.png);">
-                <a href="TBA" class="text-xl">Parcourir la galerie</a>
+                <a href="TBA"
+                    class="text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Parcourir
+                    la galerie</a>
             </div>
         </section>
-        <section class="grid justify-items-center">
-            <h2 class="font-crimson text-3xl">Mes prestations</h2>
-            <article class="flex-col filter grayscale bg-cover text-center">
-                <h3 class="flex items-center justify-center font-crimson text-2xl">Photo grossesse</h3>
+        <section class="grid justify-items-center items-center px-5 my-3">
+            <h2 class="font-crimson text-3xl my-5">Mes prestations</h2>
+            <article class="flex-col filter grayscale bg-cover text-center py-5"
+                style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/placeholder.png);">
+                <h3 class="flex items-center justify-center font-crimson text-2xl my-3">Photo grossesse</h3>
                 <figure>
                     <img src="./assets/placeholder.png" alt="image femme enceinte" class="hidden">
                 </figure>
-                <p class="flex items-center justify-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
+                    elit.
                     Harum qui iure aut quas quae nulla
                     molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
                     voluptatibus tenetur?</p>
             </article>
             <!--add two more cards for other prestation exemples-->
-            <a href="TBA" class="flex items-center justify-center block text-xl">Mes autres services...</a>
+            <a href="TBA"
+                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Mes
+                autres services...</a>
         </section>
-        <section class="flex-col">
-            <h3 class="flex items-center justify-center font-crimson text-2xl">Qui est Sarah ?</h3>
+        <section class="grid justify-items-center px-5 my-3">
+            <h3 class="flex items-center justify-center font-crimson text-2xl my-5">Qui est Sarah ?</h3>
             <figure>
                 <img src="./assets/placeholder.png" alt="portrait photographe" class="hidden">
             </figure>
-            <p class="flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="flex items-center justify-center text-start my-3 px-5">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
                 Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA" class="flex items-center justify-center text-xl">En savoir plus...</a>
+            <a href="TBA"
+                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                savoir plus...</a>
         </section>
+
         <!--section blog copiée de la section About-->
     </main>
 </body>
