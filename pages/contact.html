@@ -48,23 +48,26 @@
     </head>
     <body>
         <main class="grid justify-items-center">
-            <h1 class="my-5 text-6xl font-carattere text-carmine">Contact</h1>
-            <div>
-                <section class="grid">
-                    <h3 class="justify-self-center text-2xl	my-3 font-crimson">
+            <h1 class="my-5 text-6xl font-carattere text-carmine lg:text-8xl">
+                Contact</h1>
+            <div class="lg:flex">
+                <section class="grid my-5">
+                    <h3
+                        class="justify-self-center text-2xl	my-3 font-crimson self-center lg:text-4xl">
                         Title</h3>
-                    <p class="px-5">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. In accusantium, magnam pariatur nisi
-                        libero atque eum mollitia blanditiis temporibus eos
-                        dolore, et sint maxime molestias modi ad dolores.
-                        Reiciendis, libero. </p>
+                    <p class="px-5 md:w-2/3 justify-self-center">Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. In
+                        accusantium, magnam pariatur nisi libero atque eum
+                        mollitia blanditiis temporibus eos dolore, et sint
+                        maxime molestias modi ad dolores. Reiciendis, libero.
+                    </p>
                 </section>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d81330.37780159766!2d2.7315594038281277!3d50.43040250453095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47dd30f32995b9ed%3A0x227e61b83fe3bfcd!2s84%20Rue%20Paul%20Bert%2C%2062300%20Lens!3m2!1d50.4304847!2d2.8136935!5e0!3m2!1sfr!2sfr!4v1713964743648!5m2!1sfr!2sfr"
                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        class="w-full my-5 h-96"></iframe>
+                        class="w-full h-96 my-5"></iframe>
             </div>
-            <form action="POST" class="grid my-5">
+            <form action="POST" class="grid my-5 md:w-2/3">
                 <label for="name" class="text-carmine font-bold ">Nom</label>
                 <input type="text" name="name" id="email" placeholder="Nom"
                        class="bg-azure rounded-md p-2 my-3">
@@ -78,7 +81,7 @@
                 <textarea name="message" id="message" cols="30" rows="10"
                           class="bg-azure rounded-md p-2 my-3"></textarea>
                 <button type="submit"
-                        class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Envoyer</button>
+                        class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] md:w-1/3">Envoyer</button>
             </form>
         </main>
     </body>
