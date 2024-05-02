@@ -5,54 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah - Photographe bébé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF',
+                        azure: '#DBE6E4'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Sarah [Nom de famille]</h1>
-        <figure>
-            <img src="TBA" alt="photo bannière">
-        </figure>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsum repudiandae laudantium harum
-            modi magni beatae suscipit voluptate consequatur soluta temporibus, sunt dolorum. Adipisci quaerat
-            incidunt inventore nihil, nisi voluptatum.</p>
-        <a href="TBA">Contactez-moi</a>
-    </header>
+<body class="font-dm bg-fwhite">
     <main>
-        <section>
-            <h2>Photographe bébé depuis 10 ans...</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iste dolores molestiae est saepe voluptate
-                doloribus nostrum, quasi, blanditiis quam vel, ipsam mollitia soluta architecto ad alias ea ipsa
-                deleniti.</p>
-            <figure>
-                <img src="TBA" alt="photo preview galerie">
-            </figure>
-            <a href="TBA">Parcourir la galerie</a>
+        <section class="flex-col w-full bg-cover text-center p-10 text-fwhite"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg);">
+
+            <h1 class="flex items-center justify-center font-carattere text-5xl mt-5 px-5 text-white">Sarah Krosch</h1>
+            <p class="flex items-center justify-center my-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Incidunt, ipsum repudiandae.</p>
+            <a href="TBA"
+                class="flex items-center justify-center text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"">Contactez-moi</a>
         </section>
-        <section>
-            <h2>Mes prestations</h2>
-            <section>
-                <h3>Photo grossesse</h3>
-                <figure>
-                    <img src="TBA" alt="image femme enceinte">
-                </figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum qui iure aut quas quae nulla
-                    molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
-                    voluptatibus tenetur?</p>
-            </section>
+
+        <section class=" flex-col w-full text-center bg-azure">
+                <h2 class="flex items-center justify-center font-crimson text-3xl px-10 pt-10 text-carmine">Photographe
+                    bébé depuis 10
+                    ans...</h2>
+                <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Neque
+                    iste dolores molestiae est saepe voluptate
+                    doloribus nostrum, quasi, blanditiis.</p>
+                <div class="grid justify-items-center items-center bg-cover h-48 my-5"
+                    style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0020_galleryPV.png);">
+                    <a href="TBA"
+                        class="text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Parcourir
+                        la galerie</a>
+                </div>
+        </section>
+        <section class="grid justify-items-center items-center px-5 my-3">
+            <h2 class="font-crimson text-3xl my-5 text-carmine">Mes prestations</h2>
+            <a href="TBA">
+                <article class="flex-col filter grayscale bg-cover text-center py-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                    style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0050_prestaPREG.jpg);">
+                    <h3 class="flex items-center justify-center font-crimson text-2xl my-3">Photo grossesse</h3>
+                    <figure>
+                        <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image femme enceinte" class="hidden">
+                    </figure>
+                    <p class="flex items-center justify-center my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit.
+                        Harum qui iure aut quas quae nulla
+                        molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium, sint
+                        voluptatibus tenetur?</p>
+                </article>
+            </a>
             <!--add two more cards for other prestation exemples-->
-            <a href="TBA">Decouvrez mes autres services...</a>
+            <a href="TBA"
+                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Mes
+                autres services...</a>
         </section>
-        <section>
-            <h3>Sarah</h3>
+        <section class="grid justify-items-center px-5 my-3">
+            <h3 class="flex items-center justify-center font-crimson text-2xl text-carmine my-5">Qui est Sarah ?</h3>
             <figure>
-                <img src="TBA" alt="portrait photographe">
+                <img src="./assets/placeholder.png" alt="portrait photographe" class="hidden">
             </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quidem quo placeat quisquam ex,
+            <p class="flex items-center justify-center text-start my-3 px-5">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Inventore, quidem quo placeat quisquam ex,
                 doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
                 similique harum.</p>
-            <a href="TBA">En savoir plus...</a>
+            <a href="TBA"
+                class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                savoir plus...</a>
         </section>
+
         <!--section blog copiée de la section About-->
     </main>
 </body>
