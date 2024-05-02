@@ -5,33 +5,80 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+
+                            carmine: '#950E1B',
+                            fwhite: '#F9F7F0',
+                            ashgray: '#B7CCC9',
+                            thistle: '#D0B3BF',
+                            azure: '#DBE6E4'
+
+
+
+                        },
+                        fontFamily: {
+                            dm: ["DM Sans"],
+                            crimson: ["Crimson Text"],
+                            carattere: ["Carattere"],
+
+
+                        },
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/f0cd4bd620.js"
+                crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+              rel="stylesheet">
     </head>
     <body>
         <main class="grid justify-items-center">
-            <h1>Contact</h1>
+            <h1 class="my-5 text-6xl font-carattere text-carmine">Contact</h1>
             <div>
                 <section class="grid">
-                    <h3 class="justify-self-center">Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        In accusantium, magnam pariatur nisi libero atque eum
-                        mollitia blanditiis temporibus eos dolore, et sint
-                        maxime molestias modi ad dolores. Reiciendis, libero.
-                    </p>
+                    <h3 class="justify-self-center text-2xl	my-3 font-crimson">
+                        Title</h3>
+                    <p class="px-5">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. In accusantium, magnam pariatur nisi
+                        libero atque eum mollitia blanditiis temporibus eos
+                        dolore, et sint maxime molestias modi ad dolores.
+                        Reiciendis, libero. </p>
                 </section>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d81330.37780159766!2d2.7315594038281277!3d50.43040250453095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47dd30f32995b9ed%3A0x227e61b83fe3bfcd!2s84%20Rue%20Paul%20Bert%2C%2062300%20Lens!3m2!1d50.4304847!2d2.8136935!5e0!3m2!1sfr!2sfr!4v1713964743648!5m2!1sfr!2sfr"
                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        class="w-full"></iframe>
+                        class="w-full my-5 h-96"></iframe>
             </div>
-            <form action="POST" class="grid ">
-                <label for="name">Nom</label>
-                <input type="text" name="name" id="email" placeholder="Nom">
-                <label for="email">Adresse mail</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30"
-                          rows="10"></textarea>
-                <button type="submit">Envoyer</button>
+            <form action="POST" class="grid my-5">
+                <label for="name" class="text-carmine font-bold ">Nom</label>
+                <input type="text" name="name" id="email" placeholder="Nom"
+                       class="bg-azure rounded-md p-2 my-3">
+                <label for="email" class="text-carmine font-bold ">Adresse
+                    mail</label>
+                <input type="email" name="email" id="email"
+                       placeholder="Email@exemple.com"
+                       class="bg-azure rounded-md p-2 my-3">
+                <label for="message"
+                       class="text-carmine font-bold ">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                          class="bg-azure rounded-md p-2 my-3"></textarea>
+                <button type="submit"
+                        class="text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Envoyer</button>
             </form>
         </main>
     </body>
