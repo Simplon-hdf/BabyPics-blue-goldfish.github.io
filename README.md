@@ -1,8 +1,8 @@
-![GitHub contributors](https://img.shields.io/github/contributors/MrLkuch/RepoTemplate?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/MrLkuch/RepoTemplate?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/MrLkuch/RepoTemplate?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/MrLkuch/RepoTemplate?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/MrLkuch/RepoTemplate?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Simplon-hdf/BabyPics-blue-goldfish.github.io?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Simplon-hdf/BabyPics-blue-goldfish.github.io?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/Simplon-hdf/BabyPics-blue-goldfish.github.io?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Simplon-hdf/BabyPics-blue-goldfish.github.io?style=for-the-badge)
+
 
 <h1 align="center">Brief Baby Pics</h1>
 
@@ -36,8 +36,4 @@ This repository contain the work for the brief Baby Pics.
 - [Lucas](https://github.com/MrLkuch)
 
 
-## License
 
-Distributed under the MIT License. `LICENSE` See for more information.
-
-## Ressource
