@@ -28,6 +28,13 @@
 
 
                     },
+                    backgroundImage: {
+                    preg: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0050_prestaPREG.jpg)",
+                    baby: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0030_prestaBB.jpg)",
+                    family: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0050_prestaPREG.jpg)",
+                    banner: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg)",
+                    gallery: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.2)),url(./assets/img/index/0020_galleryPV.png)",
+                }
                 }
             }
         }
@@ -51,11 +58,10 @@
 <body class="font-dm bg-fwhite">
     <main>
         <section
-            class="lg:h-screen grid lg:grid-cols-4 lg:grid-row-5 lg:content-center justify-items-center lg:justify-items-start w-full bg-cover text-center p-10 lg:px-28 text-fwhite"
-            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg); background-position: center center;">
+            class="bg-banner bg-center lg:h-screen grid lg:grid-cols-4 lg:grid-row-5 lg:content-center justify-items-center lg:justify-items-start w-full bg-cover text-center p-10 lg:px-28 text-fwhite">
 
             <h1 class="lg:col-span-2 lg:row-start-4 font-carattere text-5xl lg:text-8xl mt-5 px-5 text-white">Sarah
-                Krosch</h1>
+                Pell</h1>
             <p class="lg:col-start-1 lg:row-start-5 flex items-center justify-center lg:text-start my-3 px-5">Lorem
                 ipsum dolor sit amet consectetur adipisicing
                 elit. Fugit voluptas, quibusdam ipsam a autem consectetur accusantium, assumenda, officiis beatae culpa
@@ -79,8 +85,7 @@
                 accusantium eaque facere, quaerat quasi rem vitae! Corrupti nam pariatur quibusdam a sint
                 perferendis reiciendis et temporibus veritatis.
                 Doloribus est quasi.</p>
-            <div class="grid justify-items-center items-center bg-cover h-48 lg:h-96 my-5"
-                style="background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.2)),url(./assets/img/index/0020_galleryPV.png); background-position: center center;">
+            <div class="bg-gallery bg-center grid justify-items-center items-center bg-cover h-48 lg:h-96 my-5">
                 <a href="TBA"
                     class="text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Parcourir
                     la galerie</a>
@@ -91,9 +96,9 @@
             <h2 class="md:col-span-2 lg:col-span-3 font-crimson text-3xl text-5xl my-5 text-carmine">Mes prestations
             </h2>
             <a href="TBA">
-                <div class="card-prestation">
+                
                     <article
-                        class="bg-[url(./assets/img/index/0050_prestaPREG.jpg)] lg:bg-none md:h-96 filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                        class="bg-preg lg:bg-none filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                         <figure>
                             <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image femme enceinte"
                                 class="hidden lg:block">
@@ -107,10 +112,10 @@
                             sint
                             voluptatibus tenetur?</p>
                     </article>
-                </div>
+                
                 <a href="TBA">
                     <article
-                        class="bg-[url(./assets/img/index/0030_prestaBB.jpg)] lg:bg-none md:h-96 filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                        class="bg-baby lg:bg-none filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                         <figure>
                             <img src="./assets/img/index/0030_prestaBB.jpg" alt="image bébé" class="hidden lg:block">
                         </figure>
@@ -126,7 +131,7 @@
                     </article>
                     <a href="TBA" class="md:col-span-2 lg:col-span-1">
                         <article
-                            class="bg-[url(./assets/img/index/0040_prestaFAMI.jpg)] lg:bg-none lg:h-96 filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                            class="bg-family lg:bg-none filter grayscale bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                             <figure>
                                 <img src="./assets/img/index/0040_prestaFAMI.jpg" alt="image famille avec bébé"
                                     class="hidden lg:block">
