@@ -1,10 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Pell - Photographe bébé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF',
+                        azure: '#DBE6E4'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                    backgroundImage: {
+                        preg: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0050_prestaPREG.jpg)",
+                        baby: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0030_prestaBB.jpg)",
+                        family: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.5)),url(./assets/img/index/0050_prestaPREG.jpg)",
+                        banner: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.664)),url(./assets/img/index/0010_header.jpg)",
+                        gallery: "linear-gradient(rgba(255, 255, 255, 0.5),rgba(208, 179, 191, 0.2)),url(./assets/img/index/0020_galleryPV.png)",
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+</head>
+
+<body class="font-dm bg-fwhite">
+    <header class=" fixed bg-azure items-center w-full">
+        <nav class="flex items-center justify-between lg:hidden">
+            <a href="./index.html">
+                <img src="./assets/img/favicon.png" alt="logo" class="w-1/3">
+            </a>
+            <label for="checkmenu"><i
+                   class="fa-solid fa-bars text-carmine p-4 text-2xl"></i>
+            </label>
+            <input id="checkmenu" type="checkbox"
+                   class="peer/menu hidden menu peer">
+            <div class="absolute w-full bg-fwhite top-full left-full peer-checked/menu:left-0 transform delay-200 duration-500 md:text-center">
+                <ul class="font-medium flex flex-col p-4 ">
+                    <li>
+                        <a href="./index.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./pages/studio.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Le studio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/galerie.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Gallerie</a>
+                    </li>
+                    <li>
+                        <a href="./pages/tarifs.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Tarifs</a>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./pages/a-propos.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">A propos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="lg:flex bg-azure items-center justify-between w-full hidden">
+            <img src="./assets/img/favicon.png" alt="logo Sarah Pell" class="w-20">
+            <ul class="flex justify-between items-center pr-10 gap-x-5 text-xl">
+                <li class="hover:text-carmine active:text-carmine"><a href="./index.html">Accueil</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../studio.html">Studio</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../galerie.html">Galerie</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../tarifs.html">Tarifs</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../blog.html">Blog</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../a-propos.html">A propos</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-16 lg:pt-20">
+        <section
+            class="bg-banner bg-center lg:h-screen grid lg:grid-cols-4 lg:grid-row-5 lg:content-center justify-items-center lg:justify-items-start w-full bg-cover text-center p-10 lg:px-28 text-fwhite">
+
+            <h1 class="lg:col-span-2 lg:row-start-4 font-carattere text-5xl lg:text-8xl mt-5 px-5 text-white">Sarah
+                Pell</h1>
+            <p class="lg:col-start-1 lg:row-start-5 flex items-center justify-center lg:text-start my-3 px-5">Lorem
+                ipsum dolor sit amet consectetur adipisicing
+                elit. Fugit voluptas, quibusdam ipsam a autem consectetur accusantium, assumenda, officiis beatae culpa
+                aliquam. Iste minus voluptatibus vel.</p>
+            <a href="./pages/contact.html"
+                class="lg:col-start-2 lg:row-start-5 w-fit text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Contactez-moi</a>
+        </section>
+
+        <section class="flex-col w-full text-center bg-azure">
+            <h2
+                class="flex items-center justify-center font-crimson text-3xl text-5xl px-10 pt-10 lg:pt-28 text-carmine">
+                Photographe
+                bébé depuis 10
+                ans...</h2>
+            <p class="flex items-center justify-center my-3 px-5 pb-5 lg:px-60 lg:pb-16">Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Officiis sequi, corporis non, dolores a beatae maiores quaerat aspernatur
+                voluptatibus maxime illum molestiae fugiat placeat! Fugit asperiores deleniti architecto laboriosam
+                aspernatur.
+                Voluptatem magni debitis repellendus explicabo voluptas quidem dolor quae alias harum incidunt,
+                accusantium eaque facere, quaerat quasi rem vitae! Corrupti nam pariatur quibusdam a sint
+                perferendis reiciendis et temporibus veritatis.
+                Doloribus est quasi.</p>
+            <div class="bg-gallery bg-center grid justify-items-center items-center bg-cover h-48 lg:h-96 my-5">
+                <a href="./pages/galerie.html"
+                    class="text-xl h-fit my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Parcourir
+                    la galerie</a>
+            </div>
+        </section>
+        <section
+            class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center px-5 my-3 md:px-10 lg:px-[12%]">
+            <h2 class="md:col-span-2 lg:col-span-3 font-crimson text-3xl text-5xl my-5 text-carmine">Mes prestations
+            </h2>
+            <a href="./pages/tarifs.html">
+
+                <article
+                    class="bg-preg lg:bg-none filter grayscale lg:hover:grayscale-0 bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                    <figure>
+                        <img src="./assets/img/index/0050_prestaPREG.jpg" alt="image femme enceinte"
+                            class="hidden lg:block">
+                    </figure>
+                    <h3 class="font-crimson text-2xl lg:text-4xl my-3">Photo grossesse</h3>
+                    <p class="my-3 px-5 pb-5">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing
+                        elit.
+                        Harum qui iure aut quas quae nulla
+                        molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium,
+                        sint
+                        voluptatibus tenetur?</p>
+                </article>
+            </a>
+            <a href="./pages/tarifs.html">
+                <article
+                    class="bg-baby lg:bg-none filter grayscale lg:hover:grayscale-0 transition bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                    <figure>
+                        <img src="./assets/img/index/0030_prestaBB.jpg" alt="image bébé" class="hidden lg:block">
+                    </figure>
+                    <h3 class="font-crimson text-2xl lg:text-4xl my-3">Photo nouveau né</h3>
+                    <p class="my-3 px-5 pb-5">Lorem ipsum dolor, sit amet
+                        consectetur
+                        adipisicing
+                        elit.
+                        Harum qui iure aut quas quae nulla
+                        molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti laudantium,
+                        sint
+                        voluptatibus tenetur?</p>
+                </article>
+            </a>
+            <a href="./pages/tarifs.html" class="md:col-span-2 lg:col-span-1">
+                <article
+                    class="bg-family lg:bg-none filter grayscale lg:hover:grayscale-0 transition bg-cover text-center m-3 py-5 lg:px-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+                    <figure>
+                        <img src="./assets/img/index/0040_prestaFAMI.jpg" alt="image famille avec bébé"
+                            class="hidden lg:block">
+                    </figure>
+                    <h3 class="font-crimson text-2xl lg:text-4xl my-3">Photo famille</h3>
+                    <p class="my-3 px-5 pb-5">Lorem ipsum dolor, sit amet
+                        consectetur
+                        adipisicing
+                        elit.
+                        Harum qui iure aut quas quae nulla
+                        molestias aliquam porro numquam nesciunt enim, officiis, unde magni ad corrupti
+                        laudantium, sint
+                        voluptatibus tenetur?</p>
+                </article>
+            </a>
+            <div class="flex justify-items-center md:col-span-2 lg:col-span-3">
+                <a href="./pages/tarifs.html"
+                    class="flex items-center justify-center block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Mes
+                    autres services</a>
+            </div>
+        </section>
+        <section
+            class="grid md:grid-cols-2 md:grid-row-4 md:place-content-center justify-items-center md:gap-x-5 px-5 my-3 md:px-16 md:my-6">
+            <h3 class="md:row-start-2 md:justify-self-start font-crimson text-2xl lg:text-4xl text-carmine my-5">Qui est
+                Sarah ?</h3>
+            <figure class="md:col-start-1 md:row-start-1 md:row-span-4 md:justify-self-end order-first md:row-span-2">
+                <img src="./assets/img/index/0060_about.jpg" alt="portrait photographe"
+                    class="hidden md:inline w-full md:h-96 md:object-cover">
+            </figure>
+            <p class="md:row-start-3 pb-5 px-5 lg:pr-40 md:text-start">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Inventore, quidem quo placeat quisquam ex,
+                doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
+                similique harum.</p>
+            <div class="md:col-span-2">
+                <a href="./pages/a-propos.html"
+                    class="block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                    savoir plus...</a>
+            </div>
+        </section>
+        <section
+            class="grid md:grid-cols-2 md:grid-row-4 md:content-center justify-items-center px-5 my-3 md:px-16  md:my-6">
+            <h3
+                class="md:row-start-2 md:justify-self-end md:self-end font-crimson text-carmine text-2xl lg:text-4xl m-3 px-5">
+                Le blog de Sarah</h3>
+            <figure class="md:col-start-2 md:row-start-1 md:row-span-4 md:justify-self-start order-first md:order-none">
+                <img src="./assets/img/index/0070_blog.png" alt="photographe écrivant à son ordinateur"
+                    class="hidden md:inline w-full md:h-96 md:object-cover object-right">
+            </figure>
+            <p class="md:row-start-3 pb-5 px-5 lg:pl-40 md:text-end">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Inventore, quidem quo placeat quisquam ex,
+                doloribus maiores est aut dicta illum assumenda, aspernatur dolor veniam fugit aliquam sit iure
+                similique harum.</p>
+            <div class="md:col-span-2">
+                <a href="./pages/blog.html"
+                    class="block text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">En
+                    savoir plus...</a>
+            </div>
+        </section>
+
+    </main>
+    <footer class=" bg-azure grid">
+        <div class="mt-5 grid md:grid-cols-3 ">
+            <div class="my-3 grid md:order-last">
+                <a href="./pages/contact.html"
+                   class="w-2/3 justify-self-center text-center text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-12">Contact</a>
+                <div class="flex justify-evenly mt-5">
+                    <a href="https://www.instagram.com/">
+                    <i
+                       class="fa-brands fa-instagram text-4xl text-carmine"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=fr">
+                    <i
+                       class="fa-brands fa-twitter text-4xl text-carmine"></i>
+                    </a>
+                </div>
+            </div>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">A propos</h3>
+                <ul>
+                    <li><a href="./pages/studio.html">Studio</a></li>
+                    <li><a href="./pages/a-propos.html">A propos</a></li>
+                    <li><a href="./pages/blog.html">Blog</a></li>
+                </ul>
+            </section>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">Préstations
+                </h3>
+                <ul>
+                    <li><a href="./pages/tarifs.html">Tarifs</a></li>
+                    <li><a href="./pages/galerie.html">Galerie</a></li>
+                </ul>
+            </section>
+        </div>
+        <span class="text-sm justify-self-center">© 2024 Blue Goldfish™.
+            Tous droits réservés</span>
+    </footer>
+
+</body>
+
 </html>

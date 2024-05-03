@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF',
+                        azure: '#DBE6E4'
+
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+</head>
+
+<body class="font-dm bg-fwhite">
+    <header class=" fixed bg-azure items-center w-full">
+        <nav class="flex items-center justify-between lg:hidden">
+            <a href="../index.html">
+                <img src="../assets/img/favicon.png" alt="logo" class="w-1/3">
+            </a>
+            <label for="checkmenu"><i
+                   class="fa-solid fa-bars text-carmine p-4 text-2xl"></i>
+            </label>
+            <input id="checkmenu" type="checkbox"
+                   class="peer/menu hidden menu peer">
+            <div class="absolute w-full bg-fwhite top-full left-full peer-checked/menu:left-0 transform delay-200 duration-500 md:text-center">
+                <ul class="font-medium flex flex-col p-4 ">
+                    <li>
+                        <a href="../index.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./studio.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Le studio</a>
+                    </li>
+                    <li>
+                        <a href="./galerie.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Gallerie</a>
+                    </li>
+                    <li>
+                        <a href="./tarifs.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Tarifs</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./a-propos.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">A propos</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="lg:flex bg-azure items-center justify-between w-full hidden">
+            <img src="../assets/img/favicon.png" alt="logo Sarah Pell" class="w-20">
+            <ul class="flex justify-between items-center pr-10 gap-x-5 text-xl">
+                <li class="hover:text-carmine active:text-carmine"><a href="../index.html">Accueil</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./studio.html">Studio</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./galerie.html">Galerie</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./tarifs.html">Tarifs</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./blog.html">Blog</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./a-propos.html">A propos</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid justify-items-center pt-16 lg:pt-24">
+        <h1 class="font-carattere text-6xl m-5 text-carmine lg:text-8xl">Le studio</h1>
+        <div class="px-5">
+            <figure class="">
+                <img src="../assets/img/studio/0010_studio.png" alt="photo studio de Sarah" class="">
+            </figure>
+        </div>
+        <p class="text-center m-3 px-5 lg:px-80 lg:mt-10 lg:mb-20">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quisquam, cumque, dignissimos
+            corporis ex illum
+            voluptates nisi magni libero omnis assumenda, facere explicabo alias eaque doloremque unde quod eius illo
+            enim.</p>
+        <article
+            class="grid justify-items-center md:grid-cols-2 lg:gap-x-5 text-center my-5 pb-5 md:p-10 bg-azure shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            <h3 class="md:justify-self-start md:self-end font-crimson text-carmine text-2xl lg:text-4xl m-3 px-5">Set
+                campagne</h3>
+                <figure
+                    class="md:justify-self-end order-first md:row-span-2">
+                    <img src="../assets/img/studio/0020_countryset.png" alt="set de photographie à thême campagnard"
+                        class="w-full md:h-96 md:object-cover">
+                </figure>
+                <p class="pb-5 px-5 lg:pr-40 md:text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque cupiditate veritatis dolore illo
+                    exercitationem cumque accusamus voluptates incidunt facilis ipsa totam aliquid nulla officia, rerum
+                    omnis qui repellat vitae doloribus?</p>
+        </article>
+        <article
+            class="grid justify-items-center md:grid-cols-2 text-center my-5 pb-5 md:p-10 bg-ashgray shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            <h3 class="md:justify-self-end md:self-end font-crimson text-carmine text-2xl lg:text-4xl m-3 px-5">Photo
+                extérieure</h3>
+                <figure
+                    class="md:row-span-2 md:col-start-2 md:justify-self-start order-first md:order-none">
+                    <img src="../assets/img/studio/0030_outsideset.png" alt="set de photographie exterieure"
+                        class="w-full md:h-96 md:object-cover object-right">
+                </figure>
+                <p class="pb-5 px-5 lg:pl-40 md:text-end">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque cupiditate veritatis dolore illo
+                    exercitationem cumque accusamus voluptates incidunt facilis ipsa totam aliquid nulla officia, rerum
+                    omnis qui repellat vitae doloribus?</p>
+        </article>
+        <article
+            class="grid justify-items-center md:grid-cols-2 text-center my-5 pb-5 md:p-10 bg-azure shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            <h3 class="md:justify-self-start md:self-end font-crimson text-carmine text-2xl lg:text-4xl m-3 px-5">Set
+                Minimal</h3>
+                <figure
+                    class="md:justify-self-end order-first md:row-span-2">
+                    <img src="../assets/img/studio/0040_minimalset.png" alt="set de photographie minimal"
+                        class="w-full md:h-96 md:object-cover">
+                </figure>
+                <p class="pb-5 px-5 lg:pr-40 md:text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque cupiditate veritatis dolore illo
+                    exercitationem cumque accusamus voluptates incidunt facilis ipsa totam aliquid nulla officia, rerum
+                    omnis qui repellat vitae doloribus?</p>
+        </article>
+        <div class="grid justify-items-center m-5 py-5 px-10 bg-rose-100 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            <p class="mb-3">Lorem ipsum dolor sit.</p>
+            <a href="./tarifs.html"
+                class="text-xl h-fit mb-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">Voir
+                les prestations</a>
+        </div>
+    </main>
+    <footer class=" bg-azure grid">
+        <div class="mt-5 grid md:grid-cols-3 ">
+            <div class="my-3 grid md:order-last">
+                <a href="./contact.html"
+                   class="w-2/3 justify-self-center text-center text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-12">Contact</a>
+                <div class="flex justify-evenly mt-5">
+                    <a href="https://www.instagram.com/">
+                    <i
+                       class="fa-brands fa-instagram text-4xl text-carmine"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=fr">
+                    <i
+                       class="fa-brands fa-twitter text-4xl text-carmine"></i>
+                    </a>
+                </div>
+            </div>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">A propos</h3>
+                <ul>
+                    <li><a href="./studio.html">Studio</a></li>
+                    <li><a href="./a-propos.html">A propos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </section>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">Préstations
+                </h3>
+                <ul>
+                    <li><a href="./tarifs.html">Tarifs</a></li>
+                    <li><a href="./galerie.html">Galerie</a></li>
+                </ul>
+            </section>
+        </div>
+        <span class="text-sm justify-self-center">© 2024 Blue Goldfish™.
+            Tous droits réservés</span>
+    </footer>
+
+</body>
+
+</html>

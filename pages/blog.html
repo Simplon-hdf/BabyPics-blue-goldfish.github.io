@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/build/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        carmine: '#950E1B',
+                        fwhite: '#F9F7F0',
+                        ashgray: '#B7CCC9',
+                        thistle: '#D0B3BF',
+                        azure: '#DBE6E4'
+
+
+                    },
+                    fontFamily: {
+                        dm: ["DM Sans"],
+                        crimson: ["Crimson Text"],
+                        carattere: ["Carattere"],
+
+
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f0cd4bd620.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carattere&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+</head>
+
+<body class="font-dm bg-fwhite">
+    <header class=" fixed bg-azure items-center w-full">
+        <nav class="flex items-center justify-between lg:hidden">
+            <a href="../index.html">
+                <img src="../assets/img/favicon.png" alt="logo" class="w-1/3">
+            </a>
+            <label for="checkmenu"><i
+                   class="fa-solid fa-bars text-carmine p-4 text-2xl"></i>
+            </label>
+            <input id="checkmenu" type="checkbox"
+                   class="peer/menu hidden menu peer">
+            <div class="absolute w-full bg-fwhite top-full left-full peer-checked/menu:left-0 transform delay-200 duration-500 md:text-center">
+                <ul class="font-medium flex flex-col p-4 ">
+                    <li>
+                        <a href="../index.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./studio.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Le studio</a>
+                    </li>
+                    <li>
+                        <a href="./galerie.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Gallerie</a>
+                    </li>
+                    <li>
+                        <a href="./tarifs.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Tarifs</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./a-propos.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">A propos</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                           class="block py-2 px-3 text-gray-900  rounded"
+                           aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="lg:flex bg-azure items-center justify-between w-full hidden">
+            <img src="../assets/img/favicon.png" alt="logo Sarah Pell" class="w-20">
+            <ul class="flex justify-between items-center pr-10 gap-x-5 text-xl">
+                <li class="hover:text-carmine active:text-carmine"><a href="../index.html">Accueil</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./studio.html">Studio</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./galerie.html">Galerie</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./tarifs.html">Tarifs</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./blog.html">Blog</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./a-propos.html">A propos</a></li>
+                <li class="hover:text-carmine active:text-carmine"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-16 lg:pt-24">
+        <section class="grid justify-items-center">
+            <h1 class="font-carattere text-6xl my-5 text-carmine md:text-8xl">Blog</h1>
+        </section>
+
+        <section class="grid justify-items-center">
+
+            <section class="flex justify-between w-full px-3 ">
+                <h2 class="font-crimson text-3xl my-3 ">Lorem ipsum dolor </h2>
+                <p class="my-5">28 mai 2048 </p>
+            </section>
+
+            <figure class="w-full lg:grid justify-items-center">
+                <img src="../assets/img/studio/0010_studio.png" alt="blog1"
+                    class="hidden md:block object-cover w-full h-1/3 px-2 self-center h-48 lg:w-2/3 object-center ">
+            </figure>
+            <p class="my-3 px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugit in ipsum beatae
+                labore excepturi
+                similique quod necessitatibus, reiciendis officiis officia incidunt, vel iusto autem pariatur. Voluptate
+                expedita excepturi aut.</p>
+            <a href="TBA" class="text-xl my-3 text-carmine lg:underline  hover:no-underline hover:text-black"> Lire plus...</a>
+
+            <div class="flex my-3">
+                <figure>
+                    <i class="fa-solid fa-eye ml-3" style="color: #950e1b;"></i>
+                </figure>
+                <p class="mx-3">40 vues</p>
+                <figure>
+                    <i class="fa-solid fa-heart mx-3" style="color: #950e1b;"></i>
+                </figure>
+                <p>10 j'aime</p>
+            </div>
+        </section>
+
+        <section class="grid justify-items-center">
+
+            <section class="flex justify-between w-full px-3 ">
+                <h2 class="font-crimson text-3xl my-3 ">Lorem ipsum dolor </h2>
+                <p class="my-5">26 janvier 1999 </p>
+            </section>
+
+            <figure class="w-full lg:grid justify-items-center">
+                <img src="../assets/img/studio/0010_studio.png" alt="blog1"
+                    class="hidden md:block object-cover w-full h-1/3 px-2 self-center h-48 lg:w-2/3 object-center ">
+            </figure>
+            <p class="my-3 px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugit in ipsum beatae
+                labore excepturi
+                similique quod necessitatibus, reiciendis officiis officia incidunt, vel iusto autem pariatur. Voluptate
+                expedita excepturi aut.</p>
+            <a href="TBA" class="text-xl my-3 text-carmine lg:underline  hover:no-underline hover:text-black"> Lire plus...</a>
+
+            <div class="flex my-3">
+                <figure>
+                    <i class="fa-solid fa-eye ml-3" style="color: #950e1b;"></i>
+                </figure>
+                <p class="mx-3">60 vues</p>
+                <figure>
+                    <i class="fa-solid fa-heart mx-3" style="color: #950e1b;"></i>
+                </figure>
+                <p>15 j'aime</p>
+            </div>
+        </section>
+
+        <section class="grid justify-items-center">
+
+            <section class="flex justify-between w-full px-3 ">
+                <h2 class="font-crimson text-3xl my-3 ">Lorem ipsum dolor </h2>
+                <p class="my-5">6 juin 2018 </p>
+            </section>
+
+            <figure class="w-full lg:grid justify-items-center">
+                <img src="../assets/img/studio/0010_studio.png" alt="blog1"
+                    class="hidden md:block object-cover w-full h-1/3 px-2 self-center h-48 lg:w-2/3 object-center ">
+            </figure>
+            <p class="my-3 px-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit fugit in ipsum beatae
+                labore excepturi
+                similique quod necessitatibus, reiciendis officiis officia incidunt, vel iusto autem pariatur. Voluptate
+                expedita excepturi aut.</p>
+            <a href="TBA" class="text-xl my-3 text-carmine lg:underline  hover:no-underline hover:text-black"> Lire plus...</a>
+
+            <div class="flex my-3">
+                <figure>
+                    <i class="fa-solid fa-eye ml-3" style="color: #950e1b;"></i>
+                </figure>
+                <p class="mx-3">40 vues</p>
+                <figure>
+                    <i class="fa-solid fa-heart mx-3" style="color: #950e1b;"></i>
+                </figure>
+                <p>10 j'aime</p>
+            </div>
+        </section>
+    </main>
+    <footer class=" bg-azure grid">
+        <div class="mt-5 grid md:grid-cols-3 ">
+            <div class="my-3 grid md:order-last">
+                <a href="./contact.html"
+                   class="w-2/3 justify-self-center text-center text-xl my-5 bg-thistle px-4 py-2 font-bold text-carmine shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-12">Contact</a>
+                <div class="flex justify-evenly mt-5">
+                    <a href="https://www.instagram.com/">
+                    <i
+                       class="fa-brands fa-instagram text-4xl text-carmine"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=fr">
+                    <i
+                       class="fa-brands fa-twitter text-4xl text-carmine"></i>
+                    </a>
+                </div>
+            </div>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">A propos</h3>
+                <ul>
+                    <li><a href="./studio.html">Studio</a></li>
+                    <li><a href="./a-propos.html">A propos</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </section>
+            <section class="my-3 grid justify-center">
+                <h3 class="text-2xl font-crimson text-carmine">Préstations
+                </h3>
+                <ul>
+                    <li><a href="./tarifs.html">Tarifs</a></li>
+                    <li><a href="./galerie.html">Galerie</a></li>
+                </ul>
+            </section>
+        </div>
+        <span class="text-sm justify-self-center">© 2024 Blue Goldfish™.
+            Tous droits réservés</span>
+    </footer>
+
+</body>
+
+</html>
