@@ -17,7 +17,7 @@
     grid-column-start: auto;
     grid-row-start: auto;
     color: #fff;
-    background: url('../../assets/img/newborn-photography-seattle-baby-photographer-NR-24.jpg');
+    background: url('../../assets/img/galerie/galerie-4.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
@@ -26,19 +26,19 @@
     counter-increment: item-counter;
 
     &:nth-of-type(3n) {
-        background-image: url('../../assets/img/11a22c678506b41140eaa00cef72def5.jpg');
+        background-image: url('../../assets/img/galerie/galerie-1.jpg');
     }
 
     &:nth-of-type(4n) {
-        background-image: url('../../assets/img/2021\ Newborn\ Retreat\ -\ The\ Milky\ Way.jpeg');
+        background-image: url('../../assets/img/galerie/galerie-2.jpeg');
     }
 
     &:nth-of-type(5n) {
-        background-image: url('../../assets/img/Baby-Photographer_Amanda-Powell-Photography_9\(pp_w1200_h856\).jpg');
+        background-image: url('../../assets/img/galerie/galerie-3.jpg');
     }
 
     &:nth-of-type(6n) {
-        background-image: url('../../assets/img/images.jpeg');
+        background-image: url('../../assets/img/galerie/galerie-5.jpeg');
     }
 
 
